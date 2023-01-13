@@ -1,0 +1,9 @@
+<visualisation>
+  <view id="ALERTGRAPH">
+    <viewItem type="chart" id="ALERTGRAPH" graphingWindowMinutes="30">
+      <system id="MAIN">
+        <parameter number="51" min="-300" max="1800" plot="line" />
+      </system>
+    </viewItem>
+  </view>
+</visualisation>

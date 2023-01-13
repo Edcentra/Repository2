@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testscenario filename="DSPU_scenario.xml" path="C:\Availability_SystemTest">
+  <testsequences>
+    <group runcount="-1" groupid="1">
+      <sequence id="1" groupid="1" name="" runcount="-1" waitfor="1" postrunwait="0" nextsequenceentry="2" sequencetimeperiodtype="Minutes" duration="10">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="status cycle" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="1" name="Spawner1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="2" groupid="1" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Milliseconds" duration="1">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="1" name="exhaust temp" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+    </group>
+    <sequence id="3" groupid="" name="" runcount="" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Milliseconds" duration="-1">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.SwapOutDataSource.DataSource" instance="1" name="Swap Out Generator1" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+  </testsequences>
+  <plugins>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="1" name="exhaust temp" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="EquipmentEventDetails" value="AvailabilitySystemTesting|iQ DryPump||0: Unknown|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iQ DryPump" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="SystemID" value="AvailabilitySystemTesting" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Reporting Period" value="0.75" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.001" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.SwapOutDataSource.DataSource" instance="1" name="Swap Out Generator1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="SystemID" value="AvailabilitySystemTesting" hasui="0" showonui="1" propertydescription="System ID associated with the PlugIn" />
+        <property name="System Type" value="0" hasui="0" showonui="1" propertydescription="Initial system type" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="status cycle" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="CSVFileName" value="C:\Availability_SystemTest\DSPU_Status_Cycling.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Time Processing Mode" value="RealTime" hasui="0" showonui="0" propertydescription="Select processing mode for data source" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Time Factor" value="1" hasui="0" showonui="0" propertydescription="Time factor value for data processing mode" />
+        <property name="PlaybackDSTimeProperties" value="Now|RealTime|Milliseconds|1" hasui="1" showonui="1" propertydescription="PlaybackDSTime property shows dialog for PlaybackTime, TimeProcessingMode and TimePeriodType properties" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="1" name="Spawner1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|SystemId" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="AvailabilitySystemTesting" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="SystemId" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Hostname" value="127.0.0.1" hasui="0" showonui="0" propertydescription="Name of the host" />
+        <property name="Port Number" value="8021" hasui="0" showonui="0" propertydescription="Port number for communication" />
+        <property name="SGEEComponent" value="Data_Logger_DLL" hasui="0" showonui="0" propertydescription="Select SGEE component" />
+        <property name="SGEEComponent Details" value="Data_Logger_DLL|127.0.0.1|8021" hasui="1" showonui="1" propertydescription="SGEE component Details dialog shows SGEE component selection, host number and port number properties." />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Output CSVFileName" value="c:\outdata.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+      </properties>
+    </plugin>
+  </plugins>
+</testscenario>

@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testscenario filename="ecomode_scenario.dspu.xml" path="C:\EcoMode_SystemTest">
+  <testsequences>
+    <sequence id="1" groupid="" name="DPD eco mode" runcount="" waitfor="15" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="-1">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CTriangleWave" instance="1" name="DPD eco mode (5 min osc)" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="DPD eco mode" abstract="0" hasui="0" needvalidation="1" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RoundingManipulator.RoundingManipulator" instance="1" name="DPD to integer" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="1" name="DPD to eco mode param" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="3" name="DPD to systems A" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="DPD to fabworks" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="to csv" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="DPD eco mode graph" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+    <sequence id="2" groupid="" name="DPD on process" runcount="" waitfor="15" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="-1">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSquareWave" instance="1" name="DPD on/off process (10 min osc)" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="1" name="DPD on off" abstract="0" hasui="0" needvalidation="1" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="2" name="DPD to on process param" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DPD to systems B" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="DPD to fabworks" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="to csv" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="1" name="DPD on process graph" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+    <sequence id="3" groupid="" name="DPD set status" runcount="" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="30">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="DPD set state" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="3" name="DPD to systems A" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="DPD to fabworks" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="to csv" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+    <sequence id="4" groupid="" name="ABD status" runcount="" waitfor="15" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="-1">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CTriangleWave" instance="2" name="ABD status (5 min osc)" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="3" name="ABD status" abstract="0" hasui="0" needvalidation="1" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RoundingManipulator.RoundingManipulator" instance="2" name="ABD to integer" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="5" name="ABD to status param" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="6" name="ABD to systems A" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="2" name="ABD to fabworks" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="to csv" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="3" name="ABD status graph" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+    <sequence id="5" groupid="" name="ABD on process" runcount="" waitfor="15" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="-1">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSquareWave" instance="2" name="ABD on/off process (10 min osc)" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="4" name="ABD on off" abstract="0" hasui="0" needvalidation="1" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="7" name="ABD to on process param" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="8" name="ABD to systems B" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="2" name="ABD to fabworks" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="to csv" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="4" name="ABD on process graph" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+    <sequence id="6" groupid="" name="ABD set status" runcount="" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="30">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="2" name="ABD set state" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="6" name="ABD to systems A" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="2" name="ABD to fabworks" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="to csv" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+  </testsequences>
+  <plugins>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="DPD set state" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="CSVFileName" value="C:\EcoMode_SystemTest\DPD_Set_Status.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Time Processing Mode" value="RealTime" hasui="0" showonui="0" propertydescription="Select processing mode for data source" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Time Factor" value="1" hasui="0" showonui="0" propertydescription="Time factor value for data processing mode" />
+        <property name="PlaybackDSTimeProperties" value="Now|RealTime|Milliseconds|1" hasui="1" showonui="1" propertydescription="PlaybackDSTime property shows dialog for PlaybackTime, TimeProcessingMode and TimePeriodType properties" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="2" name="ABD set state" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="CSVFileName" value="C:\EcoMode_SystemTest\ABD_Set_Status.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Time Processing Mode" value="RealTime" hasui="0" showonui="0" propertydescription="Select processing mode for data source" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Time Factor" value="1" hasui="0" showonui="0" propertydescription="Time factor value for data processing mode" />
+        <property name="PlaybackDSTimeProperties" value="Now|RealTime|Milliseconds|1" hasui="1" showonui="1" propertydescription="PlaybackDSTime property shows dialog for PlaybackTime, TimeProcessingMode and TimePeriodType properties" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CTriangleWave" instance="1" name="DPD eco mode (5 min osc)" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="11: Current" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ECOMODE" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Parameter Number" value="Dry Pump Current [Current]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Reporting Period" value="11" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="EquipmentEventDetails" value="ECOMODE|iXH|Dry Pump Current [Current]|11: Current|Seconds" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="TimePeriodType" value="Seconds" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.003333333333333333333333333333" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CTriangleWave" instance="2" name="ABD status (5 min osc)" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="EquipmentEventDetails" value="ABDECOMODE|Atlas 6-Port Abatement||0: Unknown|Seconds" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="Atlas 6-Port Abatement" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="SystemID" value="ABDECOMODE" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Reporting Period" value="21" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="TimePeriodType" value="Seconds" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.003333333333333333333333333333" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSquareWave" instance="1" name="DPD on/off process (10 min osc)" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="20: Power" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ECOMODE" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Parameter Number" value="Dry Pump Power [Power]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Reporting Period" value="17" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="EquipmentEventDetails" value="ECOMODE|iXH|Dry Pump Power [Power]|20: Power|Seconds" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="TimePeriodType" value="Seconds" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.0016666666666666666666666666666667" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSquareWave" instance="2" name="ABD on/off process (10 min osc)" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="1: None" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="EquipmentEventDetails" value="ABDECOMODE|Atlas 6-Port Abatement|72|1: None|Seconds" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="Spare [Enum]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="Atlas 6-Port Abatement" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="SystemID" value="ABDECOMODE" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Reporting Period" value="19" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="TimePeriodType" value="Seconds" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.0016666666666666666666666666666667" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="1" name="DPD on off" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="0" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="1" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="DPD eco mode" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="0" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="4" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="3" name="ABD status" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="0" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="8" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="4" name="ABD on off" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="0" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="1" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RoundingManipulator.RoundingManipulator" instance="1" name="DPD to integer" abstract="0" hasui="0" needvalidation="0">
+      <properties />
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RoundingManipulator.RoundingManipulator" instance="2" name="ABD to integer" abstract="0" hasui="0" needvalidation="0">
+      <properties />
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="1" name="DPD to eco mode param" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="99" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="2" name="DPD to on process param" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="68" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="3" name="DPD to systems A" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|SystemId" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="{2913b1e1-794f-439f-9e8c-aae5625100e0}|{7b010648-c3db-4272-8798-0e568b154e82}|{3ba57c4c-ca9e-442a-bc5c-df636625d836}|{4daec2af-b580-4381-abb2-2290728d241d}|{b7af6301-b510-47fe-b408-a4bfb968267c}|{8613c7ea-a070-4f03-92c0-e2db9eb98236}" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="SystemId" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DPD to systems B" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|SystemId" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="{2913b1e1-794f-439f-9e8c-aae5625100e0}|{7b010648-c3db-4272-8798-0e568b154e82}|{3ba57c4c-ca9e-442a-bc5c-df636625d836}|{4daec2af-b580-4381-abb2-2290728d241d}|{b7af6301-b510-47fe-b408-a4bfb968267c}|{8613c7ea-a070-4f03-92c0-e2db9eb98236}" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="SystemId" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="5" name="ABD to status param" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="2" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="6" name="ABD to systems A" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|SystemId" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="{0948E538-54C0-420C-8A6A-A0A579B2DA7B}" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="SystemId" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="7" name="ABD to on process param" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="72" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="8" name="ABD to systems B" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|SystemId" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="{0948E538-54C0-420C-8A6A-A0A579B2DA7B}" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="SystemId" hasui="0" showonui="0" propertydescription="Select spawner option" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="1" name="DPD on process graph" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="|iXH|68: Process On/Off [None]|0: Unknown|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="68: Process On/Off [None]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="1" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="0" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="20" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="DPD eco mode graph" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="|iXH|99: Off Process Level [None]|0: Unknown|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="99: Off Process Level [None]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="3" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="0" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="20" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="3" name="ABD status graph" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="|Atlas 6-Port Abatement|2|0: Unknown|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="Atlas 6-Port Abatement" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="7" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="0" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="20" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="4" name="ABD on process graph" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ABD" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="|Atlas 6-Port Abatement|72: Spare [Enum]|0: Unknown|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="72: Spare [Enum]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="Atlas 6-Port Abatement" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="1" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="0" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="20" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="DPD to fabworks" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Hostname" value="127.0.0.1" hasui="0" showonui="0" propertydescription="Name of the host" />
+        <property name="Port Number" value="8021" hasui="0" showonui="0" propertydescription="Port number for communication" />
+        <property name="SGEEComponent" value="Data_Logger_DLL" hasui="0" showonui="0" propertydescription="Select SGEE component" />
+        <property name="SGEEComponent Details" value="Data_Logger_DLL|127.0.0.1|8021" hasui="1" showonui="1" propertydescription="SGEE component Details dialog shows SGEE component selection, host number and port number properties." />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="2" name="ABD to fabworks" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Hostname" value="127.0.0.1" hasui="0" showonui="0" propertydescription="Name of the host" />
+        <property name="Port Number" value="8021" hasui="0" showonui="0" propertydescription="Port number for communication" />
+        <property name="SGEEComponent" value="Data_Logger_DLL" hasui="0" showonui="0" propertydescription="Select SGEE component" />
+        <property name="SGEEComponent Details" value="Data_Logger_DLL|127.0.0.1|8021" hasui="1" showonui="1" propertydescription="SGEE component Details dialog shows SGEE component selection, host number and port number properties." />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="to csv" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Output CSVFileName" value="c:\eco_stuff.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+      </properties>
+    </plugin>
+  </plugins>
+</testscenario>

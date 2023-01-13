@@ -1,0 +1,277 @@
+<?xml version="1.0" standalone="yes"?> <NewDataSet> 
+
+<PreProcessor> 
+	<ProfileName>Sys_Dep_Preprocessors</ProfileName> 
+	<ProfileID>10016</ProfileID> 
+	<PreProcessorID>1</PreProcessorID> 
+	<SystemTypeID>25</SystemTypeID> 
+	<Description>iXH Dry Pump</Description> 
+	<StartingCodes>1</StartingCodes> 
+	<RunningCodes>4</RunningCodes> 
+	<StoppingCodes>2,3</StoppingCodes> 
+	<StoppedCodes>0</StoppedCodes> 	
+	<InhibitTime>240</InhibitTime> 
+	<CloseMinuteTimeout> 4 </CloseMinuteTimeout> 
+	<EventMaximumWidth> 5 </EventMaximumWidth> 
+	<EventMaximumWidthCategoryList>ABCD</EventMaximumWidthCategoryList> 
+</PreProcessor> 
+
+<PreProcessorParameters> 
+	<ParameterNumber>4</ParameterNumber> 
+	<Description>DryPump Power</Description> 
+	<SpikeLimitStart>4200</SpikeLimitStart> 
+	<SpikeLimitEnd>4000</SpikeLimitEnd> 
+	<CategoryA>7500</CategoryA> 
+	<CategoryB>9000</CategoryB> 
+	<CategoryC>13000</CategoryC>
+	<CloseMinuteTimeout> 8 </CloseMinuteTimeout> 
+	<EventMaximumWidth> 9 </EventMaximumWidth> 
+	<EventMaximumWidthCategoryList>ABCD</EventMaximumWidthCategoryList> 
+</PreProcessorParameters> 
+
+<PreProcessorParameters> 
+	<ParameterNumber>8</ParameterNumber> 
+	<Description>Booster Power</Description> 
+	<SpikeLimitStart>2500</SpikeLimitStart> 
+	<SpikeLimitEnd>2200</SpikeLimitEnd> 
+	<CategoryA>16000</CategoryA> 
+	<CategoryB>32000</CategoryB> 
+	<CategoryC>48000</CategoryC> 
+</PreProcessorParameters>  
+
+<PreProcessorParameters> 
+	<ParameterNumber>57</ParameterNumber> 
+	<Description>DryPump Temperature</Description> 
+	<SpikeLimitStart>350</SpikeLimitStart> 
+	<SpikeLimitEnd>348</SpikeLimitEnd> 
+	<CategoryA>300</CategoryA> 
+	<CategoryB>500</CategoryB> 
+	<CategoryC>1000</CategoryC> 
+	<CloseMinuteTimeout> 5 </CloseMinuteTimeout> 
+	<EventMaximumWidth> 6 </EventMaximumWidth> 
+	<EventMaximumWidthCategoryList>ABCD</EventMaximumWidthCategoryList> 
+</PreProcessorParameters> 
+
+
+<Rule> 
+	<ProfileID>10011</ProfileID> 
+	<RuleID>1</RuleID> 
+	<SystemTypeID>0</SystemTypeID> 
+	<ProfileName>Sys_Dep_Test1</ProfileName> 
+	<ResetTime>5</ResetTime> 
+	<Description>iQ DryPump</Description> 
+</Rule> 
+
+<RuleSingleSpike> 
+	<Detection> <Category>A</Category> <StateIncrease>1</StateIncrease> </Detection> 
+	<Detection> <Category>B</Category> <StateIncrease>1</StateIncrease> </Detection> 
+	<Detection> <Category>C</Category> <StateIncrease>1</StateIncrease> </Detection> 
+	<Detection> <Category>D</Category> <StateIncrease>2</StateIncrease> </Detection> 
+	<Detection parameterNumber="4"> <Category>A</Category> <StateIncrease>2</StateIncrease> </Detection> 
+	<Detection parameterNumber="4"> <Category>B</Category> <StateIncrease>2</StateIncrease> </Detection> 
+	<Detection parameterNumber="4"> <Category>C</Category> <StateIncrease>2</StateIncrease> </Detection> 
+	<Detection parameterNumber="4"> <Category>D</Category> <StateIncrease>3</StateIncrease> </Detection> 		
+	<Detection parameterNumber="57"> <Category>A</Category> <StateIncrease>2</StateIncrease> </Detection> 
+	<Detection parameterNumber="57"> <Category>B</Category> <StateIncrease>2</StateIncrease> </Detection> 
+	<Detection parameterNumber="57"> <Category>C</Category> <StateIncrease>2</StateIncrease> </Detection> 
+	<Detection parameterNumber="57"> <Category>D</Category> <StateIncrease>1</StateIncrease> </Detection> 		
+</RuleSingleSpike> 
+
+
+
+<RuleHeader> <RuleHeaderID>10029</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>1</RuleOrder> <RuleName>D_20160</RuleName> </RuleHeader> <RuleHeader> <RuleHeaderID>10030</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>2</RuleOrder> <RuleName>CC_20160</RuleName> </RuleHeader> <RuleHeader> <RuleHeaderID>10031</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>3</RuleOrder> <RuleName>C_7500</RuleName> </RuleHeader> <RuleHeader> <RuleHeaderID>10034</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>4</RuleOrder> <RuleName>C_10800</RuleName> </RuleHeader> <RuleHeader> <RuleHeaderID>10035</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>5</RuleOrder> <RuleName>B_10800</RuleName> </RuleHeader> <RuleHeader> <RuleHeaderID>10036</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>6</RuleOrder> <RuleName>A_7500</RuleName> </RuleHeader> <RuleHeader> <RuleHeaderID>10037</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>7</RuleOrder> <RuleName>A_10800</RuleName> </RuleHeader> <RuleHeader> <RuleHeaderID>10038</RuleHeaderID> <ProfileID>10011</ProfileID> <RuleOrder>8</RuleOrder> <RuleName>Generic_20160</RuleName> </RuleHeader> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>D</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>D</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>D</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>D</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10029</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>D</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10030</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10030</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>3</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>3</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>3</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10031</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>3</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10034</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10035</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10035</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10035</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10035</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10035</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10035</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10036</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10036</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>3</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10036</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10036</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>3</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10036</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10036</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>3</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10037</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10037</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10037</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10037</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10037</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10037</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>4</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>1</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>2</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>3</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>4</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>5</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>5</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>6</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>6</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>7</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>7</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>8</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>C</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>8</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>9</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>D</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>9</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>A</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>10</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>D</Category> 
+<TimeDiff>0</TimeDiff> <SubRuleOrder>1</SubRuleOrder> </RuleLHS> 
+
+<RuleLHS> <RuleHeaderID>10038</RuleHeaderID> <SubRuleID>10</SubRuleID> <ParameterNumber>4</ParameterNumber> <Category>B</Category> 
+<TimeDiff>5</TimeDiff> <SubRuleOrder>2</SubRuleOrder> </RuleLHS> 
+
+<RuleRHS> <RuleHeaderID>10029</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>2</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10029</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10029</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10029</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10030</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>2</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10030</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>2</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> 
+
+<RuleRHS> <RuleHeaderID>10030</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>2</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10030</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10031</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10031</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>3</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10031</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>3</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10031</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10034</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10034</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>3</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10034</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>4</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10034</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10035</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10035</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>3</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10035</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>4</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10035</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10036</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10036</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>5</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10036</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>4</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10036</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10037</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10037</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>6</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10037</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>5</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10037</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10038</RuleHeaderID> <StateLevel>0</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>1</EnableStateChange> <StateIncrease>1</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10038</RuleHeaderID> <StateLevel>1</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10038</RuleHeaderID> <StateLevel>2</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> <RuleRHS> <RuleHeaderID>10038</RuleHeaderID> <StateLevel>3</StateLevel> <RuleCount>1</RuleCount> <EnableStateChange>0</EnableStateChange> <StateIncrease>0</StateIncrease> </RuleRHS> </NewDataSet>

@@ -1,0 +1,13 @@
+<visualisation>
+    <view id="ALERTGRAPH" >
+      <viewItem type="chart" id="ALERTGRAPH" graphingWindowMinutes="30">
+        <system id="MAIN">
+          <parameter number="52" plot="line" />
+          <parameter number="53" plot="line" />
+          <parameter number="54" plot="line" />
+	<probe name="N_SpikeCount " plot="line" /> 
+	<probe name="ResetRequest " plot="line" />
+        </system>	
+      </viewItem >
+    </view>
+  </visualisation>

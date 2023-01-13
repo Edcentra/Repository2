@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestSettingsReader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--test Control settings , section contains two elements, ActiveEnvironment tells which test environment is in active and all settings will be pulled from,
+   Active browser tells which browser agent will be used.-->
+	<ActiveEnvironment>EdwardsScada</ActiveEnvironment>
+	<!--Edge, IE, Firefox, Chrome-->
+	<ActiveBrowser>Chrome</ActiveBrowser>
+
+	<!--Global settings, settings in the following section will be visible to all the environments, if there is a setting in the calling environment that has the same name 
+   the settings in the eivironment section takes the priority.-->
+	<Settings>
+		<!--Common Settings -->
+		
+		
+	</Settings>
+
+	<!--EdwardsScada  settings-->
+	<EnvironmentalSettings>
+		<SettingsBlock>
+			<EnvironmentName>EdwardsScada</EnvironmentName>
+			<Settings>
+				<!--Env url settings-->
+				<SettingsEntry>
+					<Key>ScadaEnvURL</Key>
+					<!--<Value>http://160.100.31.115/EdwardsScada/</Value>-->
+					<!--<Value>http://160.100.29.71/EdwardsScada/</Value>-->
+					<Value>http://localhost/EdwardsScada/</Value>
+					<!--<Value>http://10.91.26.172/EdwardsScada/</Value>-->
+				</SettingsEntry>
+
+				<!--Credential settings-->
+				<SettingsEntry>s
+					<Key>UserName</Key>
+					<Value>administrator</Value>
+				</SettingsEntry>
+				<SettingsEntry>
+					<Key>Password</Key>
+					<Value>toolkit</Value>
+				</SettingsEntry>
+			</Settings>			
+		</SettingsBlock>
+	</EnvironmentalSettings>
+</TestSettingsReader>

@@ -1,0 +1,332 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="transformGradientModel.xsl"?>
+<GradientModelXml>
+  <Header>
+    <ModelCode> EXT </ModelCode>
+    <SystemTypeID> 25 </SystemTypeID>
+    <Comments> This is a gradient plethora test model </Comments>
+    <Author> Michael Mooney edits by Robert Bowman </Author>
+    <CreatedTime> 2008-12-10  </CreatedTime>
+    <Revision> 1 </Revision>
+    <SupportsRange>1</SupportsRange>
+  </Header>
+
+
+<PreProcessor> 
+	<StartingCodes>1</StartingCodes> 
+	<RunningCodes>4</RunningCodes> 
+	<StoppingCodes>2,3</StoppingCodes> 
+	<StoppedCodes>0</StoppedCodes> 	
+	<InhibitTime>120</InhibitTime> 
+</PreProcessor> 
+
+   <StateLevelAlerts>
+      <AlertString level="1">zzz_IDS_EXT_LEVEL_1</AlertString>
+      <AlertString level="2">zzz_IDS_EXT_LEVEL_2</AlertString>
+      <AlertString level="3">zzz_IDS_EXT_LEVEL_3</AlertString>
+      <AlertString level="4">zzz_IDS_EXT_LEVEL_4</AlertString>
+   </StateLevelAlerts>    
+  <Common>
+    <ThresholdPairs>
+      <ThresholdPair_Range>
+        <Identifier> X </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <Min> 4 </Min>
+        <Max> 5 </Max>
+      </ThresholdPair_Range>
+      <ThresholdPair_Range>
+        <Identifier> Y </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <Min> 5 </Min>
+        <Max> 6 </Max>
+      </ThresholdPair_Range>
+      <ThresholdPair_Range>
+        <Identifier> R1 </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <Min> 2 </Min>
+        <Max> 3 </Max>
+      </ThresholdPair_Range>
+      <ThresholdPair_Range>
+        <Identifier> R2 </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <Min> 3 </Min>
+        <Max> 99999 </Max>
+      </ThresholdPair_Range>
+      <ThresholdPair_Range>
+        <Identifier> RBN1 </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <Min> 3 </Min>
+      </ThresholdPair_Range>
+      <ThresholdPair_Range>
+        <Identifier> RBX1 </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <Max> 8 </Max>
+      </ThresholdPair_Range>
+      <ThresholdPair>
+        <Identifier> I </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <On> 0.5 </On>
+        <Off> 0.5 </Off>
+      </ThresholdPair>
+      <ThresholdPair>
+        <Identifier> II </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <On> 1 </On>
+        <Off> 1 </Off>
+      </ThresholdPair>
+      <ThresholdPair_RangeDiff>
+        <Identifier> A </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <On> 1 </On>
+        <Off> 1</Off>
+      </ThresholdPair_RangeDiff>
+      <ThresholdPair_RangeDiff>
+        <Identifier> B </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <On> 2 </On>
+        <Off> 2 </Off>
+        <SwitchComparison> NO </SwitchComparison>
+      </ThresholdPair_RangeDiff>
+      <ThresholdPair_RangeDiff>
+        <Identifier> C </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <GradientDirection> DEC </GradientDirection>
+        <On> 0.5 </On>
+        <Off> 0.5</Off>
+      </ThresholdPair_RangeDiff>
+      <ThresholdPair_RangeDiff>
+        <Identifier> D </Identifier>
+        <ParameterNumber> 56 </ParameterNumber>
+        <GradientDirection> Decrease </GradientDirection>
+        <On> 1.5 </On>
+        <Off> 1.5 </Off>
+        <SwitchComparison> NO </SwitchComparison>
+      </ThresholdPair_RangeDiff>
+    </ThresholdPairs>
+  </Common>
+  <PreProcessing>
+    <Range_SamplingEntry>
+      <Identifier> R X 3 </Identifier>
+      <Range_Type> MAX </Range_Type>
+      <SampleTime> 5 </SampleTime>
+      <RegisteredThresholdPairCount> 3 </RegisteredThresholdPairCount>
+      <RegisterThresholdPair1> X </RegisterThresholdPair1>
+      <RegisterThresholdPair2> Y </RegisterThresholdPair2>
+      <RegisterThresholdPair3 inhibitter="YES"> RBX1 </RegisterThresholdPair3>
+    </Range_SamplingEntry>
+    <Range_SamplingEntry>
+      <Identifier> R N 3 </Identifier>
+      <Range_Type> MIN </Range_Type>
+      <SampleTime> 5 </SampleTime>
+      <RegisteredThresholdPairCount> 1 </RegisteredThresholdPairCount>
+      <RegisterThresholdPair1 inhibitter="YES"> RBN1 </RegisterThresholdPair1>
+    </Range_SamplingEntry>
+    <Range_SamplingEntry>
+      <Identifier> R R 3 </Identifier>
+      <Range_Type> RANGE </Range_Type>
+      <SampleTime> 5 </SampleTime>
+      <RegisteredThresholdPairCount> 2 </RegisteredThresholdPairCount>
+      <RegisterThresholdPair1> R1 </RegisterThresholdPair1>
+      <RegisterThresholdPair2> R2 </RegisterThresholdPair2>
+    </Range_SamplingEntry>
+    <DifferenceSamplingEntry>
+      <Identifier> MAD 3 | 5 </Identifier>
+      <AverageSampleTime> 3 </AverageSampleTime>
+      <DifferencePeriod> 5 </DifferencePeriod>
+      <RegisteredThresholdPairCount> 2 </RegisteredThresholdPairCount>
+      <RegisterThresholdPair1> I </RegisterThresholdPair1>
+      <RegisterThresholdPair2> II</RegisterThresholdPair2>
+    </DifferenceSamplingEntry>
+    <RangeDiff_SamplingEntry>
+      <Identifier> RD XX 3 | 5 </Identifier>
+      <Range_Type> Max_Max </Range_Type>
+      <SamplePeriod> 5 </SamplePeriod>
+      <DifferencePeriod> 10 </DifferencePeriod>
+      <RegisteredThresholdPairCount> 2 </RegisteredThresholdPairCount>
+      <RegisterThresholdPair1> A </RegisterThresholdPair1>
+      <RegisterThresholdPair2> B </RegisterThresholdPair2>
+    </RangeDiff_SamplingEntry>
+    <RangeDiff_SamplingEntry>
+      <Identifier> RD NN 3 | 5 </Identifier>
+      <Range_Type> Min_Min </Range_Type>
+      <SamplePeriod> 5 </SamplePeriod>
+      <DifferencePeriod> 10 </DifferencePeriod>
+      <RegisteredThresholdPairCount> 2 </RegisteredThresholdPairCount>
+      <RegisterThresholdPair1> C </RegisterThresholdPair1>
+      <RegisterThresholdPair2> D </RegisterThresholdPair2>
+    </RangeDiff_SamplingEntry>
+    <RangeDiff_SamplingEntry>
+      <Identifier> RD NX 3 | 5 </Identifier>
+      <Range_Type> Min_Max </Range_Type>
+      <SamplePeriod> 5 </SamplePeriod>
+      <DifferencePeriod> 10 </DifferencePeriod>
+    </RangeDiff_SamplingEntry>
+    <RangeDiff_SamplingEntry>
+      <Identifier> RD XN 3 | 5 </Identifier>
+      <Range_Type> Max_Min </Range_Type>
+      <SamplePeriod> 5 </SamplePeriod>
+      <DifferencePeriod> 10 </DifferencePeriod>
+    </RangeDiff_SamplingEntry>
+  </PreProcessing>
+  <Rule>
+    <ResetTime> 10 </ResetTime>
+    <ThresholdPairActions>
+      <ThresholdPair_IndependentRange_Identifier>
+        X
+      </ThresholdPair_IndependentRange_Identifier>
+      <TimeAction>
+        <StateIncrements>
+          <Time>10</Time>
+          <StateIncrement>
+            <CurrentState> 0 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPair_IndependentRange_Identifier> Y </ThresholdPair_IndependentRange_Identifier>
+      <TimeAction>
+        <StateIncrements>
+          <Time>10</Time>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPair_IndependentRange_Identifier> R1 </ThresholdPair_IndependentRange_Identifier>
+      <TimeAction>
+        <StateIncrements>
+          <Time>3</Time>
+          <StateIncrement>
+            <CurrentState> 0 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+        <StateIncrements>
+          <Time>3</Time>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPair_IndependentRange_Identifier> R2 </ThresholdPair_IndependentRange_Identifier>
+      <TimeAction>
+        <StateIncrements>
+          <Time>10</Time>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions> 
+    <ThresholdPairActions>
+      <ThresholdPairIdentifier> I </ThresholdPairIdentifier>
+      <InhibittingRangeThresholdPairMin> RBN1 </InhibittingRangeThresholdPairMin>
+	  <InhibittingRangeThresholdPairMax> RBX1 </InhibittingRangeThresholdPairMax>
+      <TimeAction>
+        <Time> 3</Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 0 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+      <TimeAction>
+        <Time> 15 </Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPairIdentifier> II </ThresholdPairIdentifier>
+      <TimeAction>
+        <Time> 3 </Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPair_RangeDiff_Identifier> A </ThresholdPair_RangeDiff_Identifier>
+      <TimeAction>
+        <Time> 5 </Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 0 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+      <TimeAction>
+        <Time> 15 </Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPair_RangeDiff_Identifier> B </ThresholdPair_RangeDiff_Identifier>
+      <TimeAction>
+        <Time> 5 </Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPair_RangeDiff_Identifier> C </ThresholdPair_RangeDiff_Identifier>
+      <TimeAction>
+        <Time> 3 </Time>
+        <StateIncrements>
+          <StateIncrement>                             
+            <CurrentState> 0 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+      <TimeAction>
+        <Time> 20 </Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+    <ThresholdPairActions>
+      <ThresholdPair_RangeDiff_Identifier> D </ThresholdPair_RangeDiff_Identifier>
+      <TimeAction>
+        <Time> 5 </Time>
+        <StateIncrements>
+          <StateIncrement>
+            <CurrentState> 1 </CurrentState>
+            <StateIncrease> 1 </StateIncrease>
+          </StateIncrement>
+        </StateIncrements>
+      </TimeAction>
+    </ThresholdPairActions>
+  </Rule>
+</GradientModelXml>

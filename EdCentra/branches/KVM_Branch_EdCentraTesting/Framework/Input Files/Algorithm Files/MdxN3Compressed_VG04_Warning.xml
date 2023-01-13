@@ -1,0 +1,612 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="stylesheetwip.xsl"?>
+<!-- This document was created with Syntext Serna Free. -->
+<NewDataSet>
+  <PreProcessor>
+  	<ProfileName>Model_Builder</ProfileName>
+    <ProfileID>16403</ProfileID>
+    <PreProcessorID>1</PreProcessorID>
+    <SystemTypeID>16403</SystemTypeID>
+    <Description>MDXN3compForTest04Warning</Description> <!--mod--> 
+    <StartingCodes>1</StartingCodes>
+    <RunningCodes>4</RunningCodes>
+    <StoppingCodes>2,3</StoppingCodes>
+    <StoppedCodes>0</StoppedCodes>
+    <InhibitTime>240</InhibitTime>
+  </PreProcessor>
+  
+  <ModelBuilderEngine>
+  	<ProfileName>Model_Builder</ProfileName>
+    <ProfileID>16403</ProfileID>
+    <SystemTypeID>16403</SystemTypeID>
+    <Description>MDXN3compForTesting04Warning</Description> <!--mod-->
+    <StartingDate>2016-07-14 00:00:01</StartingDate>
+    <ExecutionPeriod>600</ExecutionPeriod>
+  </ModelBuilderEngine>
+  
+  <ModelConfiguration>
+  	<ModelName>MDXN3compForTest04Warning</ModelName> <!--mod-->
+  	<CreationDate>2016-07-14 00:00:01</CreationDate>
+  	<SystemTypeID>16403</SystemTypeID>
+  	<AggregationResolution>20001</AggregationResolution>
+  	<AggregationEnabled>true</AggregationEnabled>
+  	<RecordPeriod>60000</RecordPeriod>
+  	<InhibitTime>86400000</InhibitTime>
+    <ParameterList>52</ParameterList> <!--mod-->
+  </ModelConfiguration>
+
+  <!-- Parameter Access -->	
+  <FunctionalBlock>
+    <BlockType>ParameterStreamAccess</BlockType>
+    <BlockName>ParameterAccess3</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Yn_pa</LogVal>
+    <ParameterNumber>52</ParameterNumber> <!--mod-->
+  </FunctionalBlock>
+    
+  <FunctionalBlock>
+    <BlockType>DoubleConstantBlock</BlockType>
+    <BlockName>PsiPerPa</BlockName>
+    <ConstantName>PsiPerPaCte</ConstantName>
+    <ConstantValue>0.000145037738</ConstantValue>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>MultiplicationBlock</BlockType>
+    <BlockName>PaToPsi</BlockName>
+    <PinA>Yn_pa</PinA>
+    <PinB>PsiPerPaCte</PinB>
+    <PinC>Yn_psi</PinC>
+  </FunctionalBlock>
+  
+  <!-- Range -->
+  <FunctionalBlock>
+    <BlockType>DoubleMinMaxWindowBlock</BlockType>
+    <BlockName>RX2</BlockName>
+    <Sample>Yn_pa</Sample>
+    <Inhibit>RXinhibit</Inhibit>
+    <Maximum>RX2_max</Maximum>
+    <Minimum>RX2_min</Minimum>
+    <NumberOfSamples>6</NumberOfSamples>
+  </FunctionalBlock>
+  
+  <!-- W X Y Z Detection -->
+  <FunctionalBlock>
+    <BlockType>OutOfRangeDoubleBlock</BlockType>
+    <BlockName>WWW</BlockName>
+    <PinPlus>RX2_max</PinPlus>
+    <PinOut>W_flag_bar</PinOut>
+    <Max>-600</Max>
+    <Min>-1000</Min>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>NotBlock</BlockType>
+    <BlockName>WWWNot</BlockName>
+    <PinA>W_flag_bar</PinA>
+    <PinB>W_flag_bar</PinB>
+    <PinC>W_flag</PinC>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>OutOfRangeDoubleBlock</BlockType>
+    <BlockName>XXX</BlockName>
+    <PinPlus>RX2_max</PinPlus>
+    <PinOut>X_flag_bar</PinOut>
+    <Max>-250</Max>
+    <Min>-601</Min>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>NotBlock</BlockType>
+    <BlockName>XXXNot</BlockName>
+    <PinA>X_flag_bar</PinA>
+    <PinB>X_flag_bar</PinB>
+    <PinC>X_flag</PinC>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>OutOfRangeDoubleBlock</BlockType>
+    <BlockName>YYY</BlockName>
+    <PinPlus>RX2_max</PinPlus>
+    <PinOut>Y_flag_bar</PinOut>
+    <Max>6000</Max>
+    <Min>-249</Min>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>NotBlock</BlockType>
+    <BlockName>YYYNot</BlockName>
+    <PinA>Y_flag_bar</PinA>
+    <PinB>Y_flag_bar</PinB>
+    <PinC>Y_flag</PinC>
+  </FunctionalBlock>    
+  
+  <FunctionalBlock>
+    <BlockType>OutOfRangeDoubleBlock</BlockType>
+    <BlockName>ZZZ</BlockName>
+    <PinPlus>RX2_max</PinPlus>
+    <PinOut>Z_flag_bar</PinOut>
+    <Max>8000</Max>
+    <Min>6000</Min>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>NotBlock</BlockType>
+    <BlockName>ZZZNot</BlockName>
+    <PinA>Z_flag_bar</PinA>
+    <PinB>Z_flag_bar</PinB>
+    <PinC>Z_flag</PinC>
+  </FunctionalBlock>
+   
+  <!-- Rules W and Latch -->
+  <FunctionalBlock>
+  	<BlockType>DurationDetectionBlock</BlockType>
+    <BlockName>Wrule002</BlockName>
+    <FlagIn>W_flag</FlagIn>
+    <TimerPeriod>6</TimerPeriod>
+    <RuleActive>Wrule002Active</RuleActive>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+  	<BlockType>BooleanTimedLatchedBlock</BlockType>
+    <BlockName>Wrule002Latch</BlockName>
+    <StartPin>Wrule002Active</StartPin>
+    <TimerPeriod>60</TimerPeriod>
+    <OutPin>Wrule002Latched</OutPin>
+  </FunctionalBlock>
+  
+  <!-- Rules X and Latch -->
+  <FunctionalBlock>
+  	<BlockType>DurationDetectionBlock</BlockType>
+    <BlockName>Xrule002</BlockName>
+    <FlagIn>X_flag</FlagIn>
+    <TimerPeriod>6</TimerPeriod>
+    <RuleActive>Xrule002Active</RuleActive>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+  	<BlockType>BooleanTimedLatchedBlock</BlockType>
+    <BlockName>Xrule002Latch</BlockName>
+    <StartPin>Xrule002Active</StartPin>
+    <TimerPeriod>60</TimerPeriod>
+    <OutPin>Xrule002Latched</OutPin>
+  </FunctionalBlock>
+
+  <!-- Rules Y and Latch -->
+  <FunctionalBlock>
+  	<BlockType>DurationDetectionBlock</BlockType>
+    <BlockName>Yrule002</BlockName>
+    <FlagIn>Y_flag</FlagIn>
+    <TimerPeriod>6</TimerPeriod>
+    <RuleActive>Yrule002Active</RuleActive>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+  	<BlockType>BooleanTimedLatchedBlock</BlockType>
+    <BlockName>Yrule002Latch</BlockName>
+    <StartPin>Yrule002Active</StartPin>
+    <TimerPeriod>60</TimerPeriod>
+    <OutPin>Yrule002Latched</OutPin>
+  </FunctionalBlock>
+  
+  <!-- Rules Z and Latch -->
+  <FunctionalBlock>
+  	<BlockType>DurationDetectionBlock</BlockType>
+    <BlockName>Zrule002</BlockName>
+    <FlagIn>Z_flag</FlagIn>
+    <TimerPeriod>6</TimerPeriod>
+    <RuleActive>Zrule002Active</RuleActive>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+  	<BlockType>BooleanTimedLatchedBlock</BlockType>
+    <BlockName>Zrule002Latch</BlockName>
+    <StartPin>Zrule002Active</StartPin>
+    <TimerPeriod>60</TimerPeriod>
+    <OutPin>Zrule002Latched</OutPin>
+  </FunctionalBlock>
+  
+  <!--  Alert Level -->
+  <FunctionalBlock>
+    <BlockType>FourConditionsToLevelBlock</BlockType>
+    <BlockName>AlertLevelSwitch</BlockName>
+    <Condition0>Wrule002Latched</Condition0>
+    <Condition1>Xrule002Latched</Condition1>
+    <Condition2>Yrule002Latched</Condition2>
+    <Condition3>Zrule002Latched</Condition3>
+    <OutputLevel>AlertLevel</OutputLevel>
+  </FunctionalBlock>
+  
+  <!-- Alert Raising FeedBack -->
+  <FunctionalBlock>
+    <BlockType>IntegerConstantBlock</BlockType>
+    <BlockName>StateConstant</BlockName>
+    <ConstantName>StateVal</ConstantName>
+    <ConstantValue>1</ConstantValue>
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>StringConstantBlock</BlockType>
+    <BlockName>AlertCodeConstant</BlockName>
+    <ConstantName>AlertCodeVal</ConstantName>
+    <ConstantValue>alertcode</ConstantValue>
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>StringConstantBlock</BlockType>
+    <BlockName>MessageConstant0</BlockName>
+    <ConstantName>MessageVal0</ConstantName>
+    <ConstantValue>IDS_ADS_090_ALERT_ANY</ConstantValue> <!--mod-->
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>StringConstantBlock</BlockType>
+    <BlockName>MessageConstant1</BlockName>
+    <ConstantName>MessageVal1</ConstantName>
+    <ConstantValue>IDS_ADS_091_ALERT_ANY</ConstantValue> <!--mod-->
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>StringConstantBlock</BlockType>
+    <BlockName>MessageConstant2</BlockName>
+    <ConstantName>MessageVal2</ConstantName>
+    <ConstantValue>IDS_ADS_092_ALERT_ANY</ConstantValue> <!--mod-->
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>IntegerConstantBlock</BlockType>
+    <BlockName>ParameterNumberConstant</BlockName>
+    <ConstantName>ParameterNumberVal</ConstantName>
+    <ConstantValue>52</ConstantValue> <!--mod-->
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>DoubleConstantBlock</BlockType>
+    <BlockName>TriggerValueConstant</BlockName>
+    <ConstantName>TriggerValueVal</ConstantName>
+    <ConstantValue>-0.24</ConstantValue>
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>StringConstantBlock</BlockType>
+    <BlockName>DecisionTreeConstant</BlockName>
+    <ConstantName>DecisionTreeVal</ConstantName>
+    <ConstantValue>decisiontree</ConstantValue>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>DetectChangeIntegerBlock</BlockType>
+    <BlockName>AlertChangeDetection</BlockName>
+    <PinPlus>AlertLevel</PinPlus>
+    <PinOut>AlertChange</PinOut>
+  </FunctionalBlock>
+
+  <FunctionalBlock>
+    <BlockType>AlertRaisingBlock</BlockType>
+    <BlockName>CountAlertOn1</BlockName>
+    <State>AlertLevel</State>
+    <AlertCode>AlertCodeVal</AlertCode>
+    <Message>MessageVal0</Message>
+    <ParameterNumber>ParameterNumberVal</ParameterNumber>
+    <TriggerValue>TriggerValueVal</TriggerValue>
+    <DecisionTree>DecisionTreeVal</DecisionTree>
+    <TriggerPin>Xrule002Latched</TriggerPin>
+  </FunctionalBlock>
+
+  <FunctionalBlock>
+    <BlockType>AlertRaisingBlock</BlockType>
+    <BlockName>CountAlertOn2</BlockName>
+    <State>AlertLevel</State>
+    <AlertCode>AlertCodeVal</AlertCode>
+    <Message>MessageVal1</Message>
+    <ParameterNumber>ParameterNumberVal</ParameterNumber>
+    <TriggerValue>TriggerValueVal</TriggerValue>
+    <DecisionTree>DecisionTreeVal</DecisionTree>
+    <TriggerPin>Yrule002Latched</TriggerPin>
+  </FunctionalBlock>
+
+  <FunctionalBlock>
+    <BlockType>AlertRaisingBlock</BlockType>
+    <BlockName>CountAlertOn3</BlockName>
+    <State>AlertLevel</State>
+    <AlertCode>AlertCodeVal</AlertCode>
+    <Message>MessageVal2</Message>
+    <ParameterNumber>ParameterNumberVal</ParameterNumber>
+    <TriggerValue>TriggerValueVal</TriggerValue>
+    <DecisionTree>DecisionTreeVal</DecisionTree>
+    <TriggerPin>Zrule002Latched</TriggerPin>
+  </FunctionalBlock>
+  
+  <!-- Alert Clearing FeedBack -->
+  <FunctionalBlock>
+    <BlockType>IntToDoubleBlock</BlockType>
+    <BlockName>AlertConversion</BlockName>
+    <PinA>AlertLevel</PinA>
+    <PinB>AlertLevelDouble</PinB>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>AlertTriggerResetBlockV2</BlockType>
+    <BlockName>AlertReset_3</BlockName>
+    <Alert>AlertLevelDouble</Alert>
+    <RuleActive>Active_3</RuleActive>
+    <Decrement>1</Decrement>
+    <DecrementFlag>AlertResetFlag_3</DecrementFlag>
+    <Period>1</Period>
+    <AlertCondition>3</AlertCondition>
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>AlertClearingBlock</BlockType>
+    <BlockName>AlertClearer_3</BlockName>
+    <AlertCode>AlertCodeVal</AlertCode>
+    <Message>MessageVal2</Message>
+    <ParameterNumber>ParameterNumberVal</ParameterNumber>
+    <ClearValue>TriggerValueVal</ClearValue>
+    <DecisionTree>DecisionTreeVal</DecisionTree>
+    <TriggerPin>AlertResetFlag_3</TriggerPin>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>AlertTriggerResetBlockV2</BlockType>
+    <BlockName>AlertReset_2</BlockName>
+    <Alert>AlertLevelDouble</Alert>
+    <RuleActive>Active_2</RuleActive>
+    <Decrement>1</Decrement>
+    <DecrementFlag>AlertResetFlag_2</DecrementFlag>
+    <Period>1</Period>
+    <AlertCondition>2</AlertCondition>
+  </FunctionalBlock>
+  <FunctionalBlock>
+	<BlockType>AlertClearingBlock</BlockType>
+    <BlockName>AlertClearer_2</BlockName>
+    <AlertCode>AlertCodeVal</AlertCode>
+    <Message>MessageVal1</Message>
+    <ParameterNumber>ParameterNumberVal</ParameterNumber>
+    <ClearValue>TriggerValueVal</ClearValue>
+    <DecisionTree>DecisionTreeVal</DecisionTree>
+    <TriggerPin>AlertResetFlag_2</TriggerPin>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>AlertTriggerResetBlockV2</BlockType>
+    <BlockName>AlertReset_1</BlockName>
+    <Alert>AlertLevelDouble</Alert>
+    <RuleActive>Active_1</RuleActive>
+    <Decrement>1</Decrement>
+    <DecrementFlag>AlertResetFlag_1</DecrementFlag>
+    <Period>1</Period>
+    <AlertCondition>1</AlertCondition>
+  </FunctionalBlock>
+  <FunctionalBlock>
+    <BlockType>AlertClearingBlock</BlockType>
+    <BlockName>AlertClearer_1</BlockName>
+    <AlertCode>AlertCodeVal</AlertCode>
+    <Message>MessageVal0</Message>
+    <ParameterNumber>ParameterNumberVal</ParameterNumber>
+    <ClearValue>TriggerValueVal</ClearValue>
+    <DecisionTree>DecisionTreeVal</DecisionTree>
+    <TriggerPin>AlertResetFlag_1</TriggerPin>
+  </FunctionalBlock>
+  
+  <!-- Probes Range -->
+  <FunctionalBlock>
+    <BlockType>DoubleBatchProbeBlock</BlockType>
+    <BlockName>YnProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Yn_pa</LogVal>
+  </FunctionalBlock>
+
+  <FunctionalBlock>
+    <BlockType>DoubleBatchProbeBlock</BlockType>
+    <BlockName>RX2maxProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>RX2_max</LogVal>
+  </FunctionalBlock>
+
+  <!-- Probes Detection -->
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>W_flagProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>W_flag</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>X_flagProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>X_flag</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Y_flagProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Y_flag</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Z_flagProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Z_flag</LogVal>
+  </FunctionalBlock>
+  
+  <!-- Probes Rule -->
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Wrule002ActiveProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Wrule002Active</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Xrule002ActiveProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Xrule002Active</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Yrule002ActiveProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Yrule002Active</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Zrule002ActiveProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Zrule002Active</LogVal>
+  </FunctionalBlock>
+  
+  <!-- Probes Latch -->
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Wrule002LatchedProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Wrule002Latched</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Xrule002LatchedProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Xrule002Latched</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Yrule002LatchedProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Yrule002Latched</LogVal>
+  </FunctionalBlock>
+  
+  <FunctionalBlock>
+    <BlockType>BooleanBatchProbeBlock</BlockType>
+    <BlockName>Zrule002LatchedProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>Zrule002Latched</LogVal>
+  </FunctionalBlock>
+  
+  <!-- Probes Alert -->
+  <FunctionalBlock>
+    <BlockType>IntegerBatchProbeBlock</BlockType>
+    <BlockName>AlertLevelProbe</BlockName>
+    <LogTime>Xn</LogTime>
+    <LogVal>AlertLevel</LogVal>
+  </FunctionalBlock>
+  
+  <!-- Scheduler -->
+  <BlockScheduler>
+	  <BlockName>ParameterAccess3</BlockName>
+	  <BlockName>PsiPerPa</BlockName>
+	  <BlockName>PaToPsi</BlockName>
+	  <BlockName>RX2</BlockName>
+	  <BlockName>WWW</BlockName>
+	  <BlockName>WWWNot</BlockName>
+	  <BlockName>XXX</BlockName>
+	  <BlockName>XXXNot</BlockName>
+	  <BlockName>YYY</BlockName>
+	  <BlockName>YYYNot</BlockName>
+	  <BlockName>ZZZ</BlockName>
+	  <BlockName>ZZZNot</BlockName>
+	  <BlockName>Wrule002</BlockName>
+	  <BlockName>Wrule002Latch</BlockName>
+	  <BlockName>Xrule002</BlockName>
+	  <BlockName>Xrule002Latch</BlockName>
+	  <BlockName>Yrule002</BlockName>
+	  <BlockName>Yrule002Latch</BlockName>
+	  <BlockName>Zrule002</BlockName>
+	  <BlockName>Zrule002Latch</BlockName>
+	  <BlockName>AlertLevelSwitch</BlockName>
+	  <BlockName>StateConstant</BlockName>
+	  <BlockName>AlertCodeConstant</BlockName>
+	  <BlockName>MessageConstant0</BlockName>
+	  <BlockName>MessageConstant1</BlockName>
+	  <BlockName>MessageConstant2</BlockName>
+	  <BlockName>ParameterNumberConstant</BlockName>
+	  <BlockName>TriggerValueConstant</BlockName>
+	  <BlockName>DecisionTreeConstant</BlockName>
+	  <BlockName>AlertChangeDetection</BlockName>
+    <BlockName>CountAlertOn1</BlockName>
+    <BlockName>CountAlertOn2</BlockName>
+    <BlockName>CountAlertOn3</BlockName>
+	  <BlockName>AlertConversion</BlockName>
+	  <BlockName>AlertReset_3</BlockName>
+	  <BlockName>AlertClearer_3</BlockName>
+	  <BlockName>AlertReset_2</BlockName>
+	  <BlockName>AlertClearer_2</BlockName>
+	  <BlockName>AlertReset_1</BlockName>
+	  <BlockName>AlertClearer_1</BlockName>
+	  <BlockName>YnProbe</BlockName>
+	  <BlockName>RX2maxProbe</BlockName>
+	  <BlockName>W_flagProbe</BlockName>
+	  <BlockName>X_flagProbe</BlockName>
+	  <BlockName>Y_flagProbe</BlockName>
+	  <BlockName>Z_flagProbe</BlockName>
+	  <BlockName>Wrule002ActiveProbe</BlockName>
+	  <BlockName>Xrule002ActiveProbe</BlockName>
+	  <BlockName>Yrule002ActiveProbe</BlockName>
+	  <BlockName>Zrule002ActiveProbe</BlockName>
+	  <BlockName>Wrule002LatchedProbe</BlockName>
+	  <BlockName>Xrule002LatchedProbe</BlockName>
+	  <BlockName>Yrule002LatchedProbe</BlockName>
+	  <BlockName>Zrule002LatchedProbe</BlockName>
+	  <BlockName>AlertLevelProbe</BlockName>
+  </BlockScheduler>
+  
+  <!-- ResetPlan -->
+  <ResetPlan>
+	  <BlockName>ParameterAccess3</BlockName>
+	  <BlockName>PsiPerPa</BlockName>
+	  <BlockName>PaToPsi</BlockName>
+	  <BlockName>RX2</BlockName>
+	  <BlockName>WWW</BlockName>
+	  <BlockName>WWWNot</BlockName>
+	  <BlockName>XXX</BlockName>
+	  <BlockName>XXXNot</BlockName>
+	  <BlockName>YYY</BlockName>
+	  <BlockName>YYYNot</BlockName>
+	  <BlockName>ZZZ</BlockName>
+	  <BlockName>ZZZNot</BlockName>
+	  <BlockName>Wrule002</BlockName>
+	  <BlockName>Wrule002Latch</BlockName>
+	  <BlockName>Xrule002</BlockName>
+	  <BlockName>Xrule002Latch</BlockName>
+	  <BlockName>Yrule002</BlockName>
+	  <BlockName>Yrule002Latch</BlockName>
+	  <BlockName>Zrule002</BlockName>
+	  <BlockName>Zrule002Latch</BlockName>
+	  <BlockName>AlertLevelSwitch</BlockName>
+	  <BlockName>StateConstant</BlockName>
+	  <BlockName>AlertCodeConstant</BlockName>
+	  <BlockName>MessageConstant0</BlockName>
+	  <BlockName>MessageConstant1</BlockName>
+	  <BlockName>MessageConstant2</BlockName>
+	  <BlockName>ParameterNumberConstant</BlockName>
+	  <BlockName>TriggerValueConstant</BlockName>
+	  <BlockName>DecisionTreeConstant</BlockName>
+	  <BlockName>AlertChangeDetection</BlockName>
+    <BlockName>CountAlertOn1</BlockName>
+    <BlockName>CountAlertOn2</BlockName>
+    <BlockName>CountAlertOn3</BlockName>
+	  <BlockName>AlertConversion</BlockName>
+	  <BlockName>AlertReset_3</BlockName>
+	  <BlockName>AlertClearer_3</BlockName>
+	  <BlockName>AlertReset_2</BlockName>
+	  <BlockName>AlertClearer_2</BlockName>
+	  <BlockName>AlertReset_1</BlockName>
+	  <BlockName>AlertClearer_1</BlockName>
+	  <BlockName>YnProbe</BlockName>
+	  <BlockName>RX2maxProbe</BlockName>
+	  <BlockName>W_flagProbe</BlockName>
+	  <BlockName>X_flagProbe</BlockName>
+	  <BlockName>Y_flagProbe</BlockName>
+	  <BlockName>Z_flagProbe</BlockName>
+	  <BlockName>Wrule002ActiveProbe</BlockName>
+	  <BlockName>Xrule002ActiveProbe</BlockName>
+	  <BlockName>Yrule002ActiveProbe</BlockName>
+	  <BlockName>Zrule002ActiveProbe</BlockName>
+	  <BlockName>Wrule002LatchedProbe</BlockName>
+	  <BlockName>Xrule002LatchedProbe</BlockName>
+	  <BlockName>Yrule002LatchedProbe</BlockName>
+	  <BlockName>Zrule002LatchedProbe</BlockName>
+	  <BlockName>AlertLevelProbe</BlockName>
+  </ResetPlan>
+</NewDataSet>

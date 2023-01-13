@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testscenario filename="MdxN3N4N5Scenario.xml" path="C:\Users\Administrator\Desktop\PDM All Files\DSPU scenario">
+  <testsequences>
+    <sequence id="1" groupid="" name="" runcount="" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="3000">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="MdxN3N4N5Csv" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CMassSpawnerDataManipulator" instance="1" name="MdxN3N4N5Spawner" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="1" name="MdxN3N4N5VisualGraph" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="MdxN3N4N5DspuOutput" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+  </testsequences>
+  <plugins>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="MdxN3N4N5Csv" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="CSVFileName" value="C:\Users\Administrator\Desktop\PDM All Files\CSV dataset\DSPU_MdxN3N4N5Compressed.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Time Processing Mode" value="RealTime" hasui="0" showonui="0" propertydescription="Select processing mode for data source" />
+        <property name="TimePeriodType" value="Seconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Time Factor" value="1" hasui="0" showonui="0" propertydescription="Time factor value for data processing mode" />
+        <property name="PlaybackDSTimeProperties" value="Now|RealTime|Seconds|1" hasui="1" showonui="1" propertydescription="PlaybackDSTime property shows dialog for PlaybackTime, TimeProcessingMode and TimePeriodType properties" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CMassSpawnerDataManipulator" instance="1" name="MdxN3N4N5Spawner" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="SpawnerDetails" value="Now|Seconds|SystemId" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Starting Point" value="2000" hasui="0" showonui="1" propertydescription="Starting point for the System ID format" />
+        <property name="System ID Format" value="MdxN3N4N5VG{0}" hasui="0" showonui="1" propertydescription="Enter System ID format to be used for each spawned datapoint" />
+        <property name="TimePeriodType" value="Seconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="SpawnerOption" value="SystemId" hasui="0" showonui="0" propertydescription="Select spawner option" />
+        <property name="Output Interval" value="10" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+        <property name="Number of Items" value="15" hasui="0" showonui="1" propertydescription="No of Items to spawn" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="1" name="MdxN3N4N5VisualGraph" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="21: Pressure" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="MdxN3N4N5VG2001" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="MdxN3N4N5VG2001|iAtlas Abatement|53: Inlet 4 Pressure [Pressure]|21: Pressure|Seconds" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="53: Inlet 4 Pressure [Pressure]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iAtlas Abatement" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="1" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="-1" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="1125" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Seconds" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Hostname" value="127.0.0.1" hasui="0" showonui="0" propertydescription="Name of the host" />
+        <property name="Port Number" value="8021" hasui="0" showonui="0" propertydescription="Port number for communication" />
+        <property name="SGEEComponent" value="Data_Logger_DLL" hasui="0" showonui="0" propertydescription="Select SGEE component" />
+        <property name="SGEEComponent Details" value="Data_Logger_DLL|127.0.0.1|8021" hasui="1" showonui="1" propertydescription="SGEE component Details dialog shows SGEE component selection, host number and port number properties." />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="MdxN3N4N5DspuOutput" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Output CSVFileName" value="C:\Users\Administrator\Desktop\PDM All Files\DSPU Output\Dspu Output for MdxN3N4N5.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+      </properties>
+    </plugin>
+  </plugins>
+</testscenario>

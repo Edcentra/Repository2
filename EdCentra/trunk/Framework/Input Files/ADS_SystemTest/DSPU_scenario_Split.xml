@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testscenario filename="DSPU_scenario.xml" path="C:\ADS_SystemTest">
+  <testsequences>
+    <group runcount="-1" groupid="1">
+      <sequence id="1" groupid="1" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="2" sequencetimeperiodtype="Minutes" duration="47">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="ex 9 csv" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="1" name="Spawner1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="1" name="VisualGraph1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="2" groupid="1" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Minutes" duration="22">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="1" name="exhaust temp" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="1" name="temperature" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="5" name="ExhaustGasTemp" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="1" name="VisualGraph1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+    </group>
+    <group runcount="-1" groupid="2">
+      <sequence id="3" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="4" sequencetimeperiodtype="Minutes" duration="1">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="steady state" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="4" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="5" sequencetimeperiodtype="Minutes" duration="1">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="3" name="spike" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="5" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="6" sequencetimeperiodtype="Minutes" duration="6">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="steady state" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="6" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="7" sequencetimeperiodtype="Minutes" duration="1">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="3" name="spike" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="7" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="8" sequencetimeperiodtype="Minutes" duration="5">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="steady state" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="8" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="9" sequencetimeperiodtype="Minutes" duration="1">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="3" name="spike" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="9" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="10" sequencetimeperiodtype="Minutes" duration="20">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="steady state" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="10" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="11" sequencetimeperiodtype="Minutes" duration="2">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="3" name="spike" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="11" groupid="2" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Minutes" duration="32">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="steady state" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+    </group>
+    <sequence id="12" groupid="" name="ProcessCounter_OnOffProcess" runcount="" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Milliseconds" duration="-1">
+      <plugins>
+        <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSquareWave" instance="1" name="ProcessOnOff" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="4" name="OnOff" abstract="0" hasui="0" needvalidation="1" />
+        <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="2" name="ProcessOnOffPNum68" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="3" name="VisualGraph3" abstract="0" hasui="0" needvalidation="0" />
+        <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+      </plugins>
+    </sequence>
+    <group runcount="-1" groupid="3">
+      <sequence id="13" groupid="3" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="14" sequencetimeperiodtype="Minutes" duration="4.5">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSawToothWave" instance="2" name="ProcessCycle" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="5" name="OffProcessPower" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="3" name="ProcessPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="4" name="VisualGraph4" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+      <sequence id="14" groupid="3" name="" runcount="-1" waitfor="0" postrunwait="0" nextsequenceentry="0" sequencetimeperiodtype="Seconds" duration="30">
+        <plugins>
+          <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSawToothWave" instance="2" name="ProcessCycle" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="6" name="OnProcessPower" abstract="0" hasui="0" needvalidation="1" />
+          <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="3" name="ProcessPower" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="4" name="VisualGraph4" abstract="0" hasui="0" needvalidation="0" />
+          <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0" />
+        </plugins>
+      </sequence>
+    </group>
+  </testsequences>
+  <plugins>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="1" name="exhaust temp" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="24: Temperature" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ADSSystemTesting" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Parameter Number" value="Exhaust Gas Temperature [Temperature]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Reporting Period" value="0.75" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="EquipmentEventDetails" value="ADSSystemTesting|iXH|Exhaust Gas Temperature [Temperature]|24: Temperature|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.001" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSineWave" instance="2" name="dp power" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="20: Power" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="EquipmentEventDetails" value="ADSSystemTesting|iXH|Dry Pump Power [Power]|20: Power|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="Dry Pump Power [Power]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="SystemID" value="ADSSystemTesting" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Reporting Period" value="0.75" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.01" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSawToothWave" instance="2" name="ProcessCycle" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="20: Power" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ADSSystemTesting" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Parameter Number" value="Booster Power [Power]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Reporting Period" value="10" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="EquipmentEventDetails" value="ADSSystemTesting|iXH|Booster Power [Power]|20: Power|Seconds" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="TimePeriodType" value="Seconds" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.0083" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.CSVDataSource.CCSVDataSource" instance="1" name="ex 9 csv" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="CSVFileName" value="C:\ADS_SystemTest\Example9_DSPU_Exhaust_Temperature.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="Time Processing Mode" value="RealTime" hasui="0" showonui="0" propertydescription="Select processing mode for data source" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Time Factor" value="1" hasui="0" showonui="0" propertydescription="Time factor value for data processing mode" />
+        <property name="PlaybackDSTimeProperties" value="Now|RealTime|Milliseconds|1" hasui="1" showonui="1" propertydescription="PlaybackDSTime property shows dialog for PlaybackTime, TimeProcessingMode and TimePeriodType properties" />
+      </properties>
+    </plugin>
+    <plugin type="SOURCE" subtype="Edwards.DSPU.WaveformDataSource.CSquareWave" instance="1" name="ProcessOnOff" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="1: None" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ADSSystemTesting" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="Parameter Number" value="Pump Node [None]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iXH" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Reporting Period" value="10" hasui="0" showonui="1" propertydescription="Data generation reporting period" />
+        <property name="EquipmentEventDetails" value="ADSSystemTesting|iXH|Pump Node [None]|1: None|Seconds" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="TimePeriodType" value="Seconds" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Frequency" value="0.0083" hasui="0" showonui="1" propertydescription="The frequency(in Hz) of the waveform generated" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="1" name="temperature" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="273" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="273" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="2" name="steady state" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="1000" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="1050" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="3" name="spike" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="7000" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="7100" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="4" name="OnOff" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="0" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="1" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="5" name="OffProcessPower" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="300" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="400" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.RangeDataManipulator.CRangeDataManipulator" instance="6" name="OnProcessPower" abstract="0" hasui="0" needvalidation="1">
+      <properties>
+        <property name="Min" value="1500" hasui="0" showonui="1" propertydescription="Minimum value for Range" />
+        <property name="Max" value="2000" hasui="0" showonui="1" propertydescription="Maximum value for Range" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="1" name="Spawner1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="SpawnerOption" value="SystemId" hasui="0" showonui="0" propertydescription="Select spawner option" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|SystemId" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="ADSSystemTesting" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="2" name="ProcessOnOffPNum68" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="68" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="3" name="ProcessPower" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="8" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="4" name="DryPumpPower" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="4" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+      </properties>
+    </plugin>
+    <plugin type="MANIPULATOR" subtype="Edwards.DSPU.SpawnerDataManipulator.CSpawnerDataManipulator" instance="5" name="ExhaustGasTemp" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="SpawnerOption" value="Parameter" hasui="0" showonui="0" propertydescription="Select spawner option" />
+        <property name="Playback Time" value="Now" hasui="0" showonui="0" propertydescription="Play back time option at which play back data will be passed to destination" />
+        <property name="SpawnerDetails" value="Now|Milliseconds|Parameter" hasui="1" showonui="1" propertydescription="Spawner Details dialog shows Spawner Option, PlaybackTime, TimeProcessingMode properties." />
+        <property name="Value" value="56" hasui="0" showonui="1" propertydescription="Option value with pipe (|) delimiter" />
+        <property name="TimePeriodType" value="Milliseconds" hasui="0" showonui="0" propertydescription="Select time period type" />
+        <property name="Output Interval" value="1" hasui="0" showonui="1" propertydescription="Enter output interval in seconds" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="1" name="VisualGraph1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="ADSSystemTesting|iQ DryPump|Exhaust Temperature [Temperature]|24: Temperature|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iQ DryPump" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="281" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="273" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="30" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="2" name="VisualGraph2" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="20: Power" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ADSSystemTesting" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="ADSSystemTesting|iQ DryPump|DryPump Power [Power]|20: Power|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="DryPump Power [Power]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iQ DryPump" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="8000" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="500" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="30" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:15" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="3" name="VisualGraph3" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="0: Unknown" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="|iQ DryPump||0: Unknown|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iQ DryPump" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="1" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="0" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="30" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.VisualGraphDataDestination.CVisualGraphDataDestination" instance="4" name="VisualGraph4" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Parameter Unit" value="20: Power" hasui="0" showonui="0" propertydescription="Parameter unit for the selected parameter number" />
+        <property name="SystemID" value="ADSSystemTest" hasui="0" showonui="0" propertydescription="System ID associated with the PlugIn" />
+        <property name="EquipmentEventDetails" value="ADSSystemTesting|iQ DryPump|Booster Power [Power]|20: Power|Minutes" hasui="1" showonui="1" propertydescription="Equipment Event Details consists of SystemId, SytemType, ParameterNumber, ParameterUnit and unit of time for PlugIn" />
+        <property name="Parameter Number" value="Booster Power [Power]" hasui="0" showonui="0" propertydescription="Parameter no. associated with the PlugIn" />
+        <property name="System Type" value="iQ DryPump" hasui="0" showonui="0" propertydescription="System type associated with the PlugIn" />
+        <property name="Maximum Value" value="2000" hasui="0" showonui="1" propertydescription="Maximum range of Y-axis" />
+        <property name="Minimum Value" value="300" hasui="0" showonui="1" propertydescription="Minimum range of Y-axis" />
+        <property name="Time Window" value="30" hasui="0" showonui="1" propertydescription="Duration to be displayed on the graph" />
+        <property name="TimePeriodType" value="Minutes" hasui="1" showonui="0" propertydescription="Select time period type" />
+        <property name="Graph Update Interval" value="00:00:04" hasui="0" showonui="1" propertydescription="Graph update interval in HH:MM:SS" />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.SGEEDataDestination.CSGEEDataDestination" instance="1" name="SGEE1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Hostname" value="10.91.26.156" hasui="0" showonui="0" propertydescription="Name of the host" />
+        <property name="Port Number" value="8021" hasui="0" showonui="0" propertydescription="Port number for communication" />
+        <property name="SGEEComponent" value="Data_Logger_DLL" hasui="0" showonui="0" propertydescription="Select SGEE component" />
+        <property name="SGEEComponent Details" value="Data_Logger_DLL|10.91.26.156|8021" hasui="1" showonui="1" propertydescription="SGEE component Details dialog shows SGEE component selection, host number and port number properties." />
+      </properties>
+    </plugin>
+    <plugin type="DESTINATION" subtype="Edwards.DSPU.CSVDataDestination.CCSVDataDestination" instance="1" name="CSV1" abstract="0" hasui="0" needvalidation="0">
+      <properties>
+        <property name="Output CSVFileName" value="c:\outdata.csv" hasui="1" showonui="1" propertydescription="Select or Enter CSV File name" />
+      </properties>
+    </plugin>
+  </plugins>
+</testscenario>

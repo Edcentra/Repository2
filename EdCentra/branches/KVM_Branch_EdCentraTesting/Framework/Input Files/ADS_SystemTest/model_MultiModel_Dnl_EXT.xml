@@ -1,0 +1,154 @@
+<?xml version="1.0" standalone="yes"?>
+<MultiModelXml>
+   <Header>
+      <ModelCode> MUM </ModelCode>
+      <SystemTypeID> 25 </SystemTypeID>
+      <Comments> This is the test multimodel model </Comments>
+      <Author> RAB </Author>
+      <CreatedTime> 2009-03-24 </CreatedTime>
+      <Revision> Draft 1 </Revision>
+   </Header>
+   <PreProcessing>
+      <!-- looking for EXT and D&I State Increments -->
+      <LookFor> EXT </LookFor> 
+      <LookFor> DnI </LookFor> <!-- NOTE :: use of DnI, not D&I. & has special meaning in Xml -->                    
+   </PreProcessing>
+   <StateLevelAlerts>
+      <AlertString level="4">IDS_MUM_ALERT_STRING_4</AlertString>
+   </StateLevelAlerts>
+   <Rule>
+      <!-- the model reset (decrement state) time -->
+      <ResetTimeMinutes> 2 </ResetTimeMinutes>     
+      <!-- a RequiredAction node describes what should happen should two of the component models be at certain states ...
+          ModelA  :  		one of the models
+              @code - 			gives the code to look for
+             @state - 			the state to look for
+          ModelB  :  		another model
+              @code - 			gives the code to look for
+             @state - 			the state to look for
+          TimePeriodMinutes :  	the tolerance between the match state changes, if outside of this tolerance, then IGNORE
+          AbsoluteState :  	the absolute state that is required
+          AlertString :  	any IDS_ formed alert string, overridding state level IDS_ strings, and generic IDS_ strings
+      -->
+      <RequiredAction>
+         <ModelA code="DnI" state="1" />
+         <ModelB code="EXT" state="1" />
+         <TimePeriodMinutes> 3 </TimePeriodMinutes>
+		 <AbsoluteState> 1 </AbsoluteState>
+		 <AlertString> IDS_MYSTRING_1 </AlertString>         
+      </RequiredAction>
+      <RequiredAction>
+         <ModelA code="EXT" state="1" />     <!-- observe ModelA and ModelB ordering is irrelevant! -->
+         <ModelB code="DnI" state="2" />
+         <TimePeriodMinutes> 4 </TimePeriodMinutes>
+		 <AbsoluteState> 1 </AbsoluteState>
+		 <AlertString> IDS_MYSTRING_1576 </AlertString>         
+      </RequiredAction>
+      <RequiredAction>
+         <ModelA code="EXT" state="1" />     <!-- observe ModelA and ModelB ordering is irrelevant! -->
+         <ModelB code="DnI" state="3" />
+         <TimePeriodMinutes> 4 </TimePeriodMinutes>
+		 <AbsoluteState> 2 </AbsoluteState>
+		 <AlertString> IDS_MYSTRING_1576 </AlertString>         
+      </RequiredAction>
+      <RequiredAction>
+         <ModelA code="EXT" state="1" />     <!-- observe ModelA and ModelB ordering is irrelevant! -->
+         <ModelB code="DnI" state="4" />
+         <TimePeriodMinutes> 4 </TimePeriodMinutes>
+		 <AbsoluteState> 3 </AbsoluteState>
+		 <AlertString> IDS_MYSTRING_1576 </AlertString>         
+      </RequiredAction>
+      <RequiredAction>
+         <ModelA code="EXT" state="2" />     <!-- observe ModelA and ModelB ordering is irrelevant! -->
+         <ModelB code="DnI" state="1" />
+         <TimePeriodMinutes> 4 </TimePeriodMinutes>
+		 <AbsoluteState> 1 </AbsoluteState>
+		 <AlertString> IDS_MYSTRING_1576 </AlertString>         
+      </RequiredAction>
+      <RequiredAction>
+         <ModelA code="EXT" state="2" />
+         <ModelB code="DnI" state="2" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 2 </AbsoluteState>
+		 <AlertString> IDS_MYSTRING_14847574334565 </AlertString>         
+      </RequiredAction>      
+      <RequiredAction>
+         <ModelA code="EXT" state="2" />
+         <ModelB code="DnI" state="3" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 2 </AbsoluteState>
+      </RequiredAction>      
+      <RequiredAction>
+         <ModelA code="EXT" state="3" />
+         <ModelB code="DnI" state="2" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 2 </AbsoluteState>
+      </RequiredAction>      
+      <RequiredAction>
+         <ModelA code="EXT" state="3" />
+         <ModelB code="DnI" state="3" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 3 </AbsoluteState>
+      </RequiredAction>      
+      <RequiredAction>
+         <ModelA code="EXT" state="3" />
+         <ModelB code="DnI" state="4" />
+         <TimePeriodMinutes> 6 </TimePeriodMinutes>
+		 <AbsoluteState> 3 </AbsoluteState>
+      </RequiredAction>      
+      <RequiredAction>
+         <ModelA code="EXT" state="4" />
+         <ModelB code="DnI" state="3" />
+         <TimePeriodMinutes> 6 </TimePeriodMinutes>
+		 <AbsoluteState> 3 </AbsoluteState>
+      </RequiredAction>      
+      <RequiredAction>
+         <ModelA code="EXT" state="4" />
+         <ModelB code="DnI" state="4" />
+         <TimePeriodMinutes> 6 </TimePeriodMinutes>
+		 <AbsoluteState> 4 </AbsoluteState>
+      </RequiredAction>     
+      <RequiredAction>
+         <ModelA code="DnI" state="3" />
+         <ModelB code="EXT" state="1" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 3 </AbsoluteState>
+      </RequiredAction>   
+      <RequiredAction>
+         <ModelA code="DnI" state="3" />
+         <ModelB code="EXT" state="2" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 3 </AbsoluteState>
+      </RequiredAction>   
+      <RequiredAction>
+         <ModelA code="DnI" state="3" />
+         <ModelB code="EXT" state="4" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 4 </AbsoluteState>
+      </RequiredAction>   
+      <RequiredAction>
+         <ModelA code="DnI" state="2" />
+         <ModelB code="EXT" state="1" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 2 </AbsoluteState>
+      </RequiredAction>   
+      <RequiredAction>
+         <ModelA code="DnI" state="2" />
+         <ModelB code="EXT" state="4" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 4 </AbsoluteState>
+      </RequiredAction>  
+      <RequiredAction>
+         <ModelA code="DnI" state="4" />
+         <ModelB code="EXT" state="1" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 3 </AbsoluteState>
+      </RequiredAction>   
+      <RequiredAction>
+         <ModelA code="DnI" state="4" />
+         <ModelB code="EXT" state="2" />
+         <TimePeriodMinutes> 5 </TimePeriodMinutes>
+		 <AbsoluteState> 4 </AbsoluteState>
+      </RequiredAction>  
+   </Rule>      
+</MultiModelXml>

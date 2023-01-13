@@ -1,0 +1,678 @@
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\nunit.engine.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\nunit.engine.api.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Pages\SecsGemPage.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\Fingerprint.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SecsGem.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\TipOfTheDayManager.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\FingerprintStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\SecsGemStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\TipOfTheDayManagerStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\Fingerprint.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SecsGem.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\TipOfTheDayManager.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Drivers\chromedriver.exe
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Drivers\geckodriver.exe
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\ADS_SystemTest\DSPU_scenario.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\ADS_SystemTest\model_GradientBased_EXT.XML
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\Algorithm Files\MdxN3Compressed_VG04_Alarm.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\Algorithm Files\MdxN3Compressed_VG04_Warning.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\Availability Data System\DSPU_scenario.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\Maintain Module\DSPU_New Scenario.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\Visualization Files\VisualisationXML_Algorithm.txt
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DeviceExplorerTest.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\GetStarted.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianPerformanceTests.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianTest.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallEdcentra.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallPostTests.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\LiveAlertsList.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\OtherDeviceDataTypes.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\PdmTests.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SetUpTests.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\UserManagement.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\WelcomeScreen.feature.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\AlertInhibitStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\ConfigurationHandlerStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\ConfugireTestsStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\DeviceExplorerTestsStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\DispatchManagertStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\GetStartedStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\HistorianPerformanceTestsStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\HistorianTestsStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\InstallEdcentraStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\InstallPostTestsStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\LiveAlertsListStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\OtherDeviceDataTypesStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\PdmTestsStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\SetupTestsStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\UserManagementStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\WelcomeScreenStepDefinition.cs
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Input Files\License Files\SingleAlgorithm.alf
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\AlertInhibit.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\ConfigurationHandler.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\ConfigureTests.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DeviceExplorerTest.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DispatchManager.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\GetStarted.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianPerformanceTests.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianTest.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallEdcentra.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallPostTests.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\LiveAlertsList.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\OtherDeviceDataTypes.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\PdmTests.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SetUpTests.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\UserManagement.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\WelcomeScreen.feature
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.dll.config
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\netstandard.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.AppContext.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Collections.Concurrent.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Collections.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Collections.NonGeneric.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Collections.Specialized.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Console.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Data.Common.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Debug.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Process.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Tools.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Drawing.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Dynamic.Runtime.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Globalization.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Globalization.Extensions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.Compression.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.Pipes.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Linq.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Linq.Expressions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Linq.Parallel.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Linq.Queryable.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.Http.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.NameResolution.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.NetworkInformation.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.Ping.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.Requests.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.Security.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.Sockets.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Net.WebSockets.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.ObjectModel.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Reflection.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Reflection.Extensions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Reflection.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Resources.Reader.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Resources.ResourceManager.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Resources.Writer.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Handles.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Numerics.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.Claims.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.Principal.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Security.SecureString.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Text.Encoding.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.Overlapped.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.Thread.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.Timer.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.ValueTuple.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Xml.XDocument.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Xml.XmlDocument.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Xml.XPath.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Castle.Core.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\DnsClient.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\ExtentReports.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FlaUI.Core.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA2.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA3.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Gherkin.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Interop.UIAutomationClient.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\log4net.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\MongoDB.Bson.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\nunit.framework.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\RazorEngine.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Buffers.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Shim.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestStack.White.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestStack.White.Reporting.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestStack.White.ScreenObjects.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Utf8Json.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\WebDriver.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\WebDriver.Support.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Castle.Core.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\DnsClient.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FlaUI.Core.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA2.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA3.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\log4net.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\MongoDB.Bson.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\nunit.framework.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\nunit.framework.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\RazorEngine.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestStack.White.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestStack.White.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestStack.White.Reporting.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\TestStack.White.ScreenObjects.pdb
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\Utf8Json.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\WebDriver.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\bin\Debug\WebDriver.Support.xml
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\obj\Debug\Interop.NetFwTypeLib.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.CopyComplete
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.dll
+C:\Users\Administrator\Desktop\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Pages\SecsGemPage.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\Fingerprint.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SecsGem.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\TipOfTheDayManager.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\FingerprintStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\SecsGemStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\TipOfTheDayManagerStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\Fingerprint.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SecsGem.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\TipOfTheDayManager.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\NUnit3.TestAdapter.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\NUnit3.TestAdapter.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\nunit.engine.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\nunit.engine.api.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Drivers\chromedriver.exe
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Drivers\geckodriver.exe
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\ADS_SystemTest\DSPU_scenario.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\ADS_SystemTest\model_GradientBased_EXT.XML
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\Algorithm Files\MdxN3Compressed_VG04_Alarm.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\Algorithm Files\MdxN3Compressed_VG04_Warning.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\Availability Data System\DSPU_scenario.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\Maintain Module\DSPU_New Scenario.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\Visualization Files\VisualisationXML_Algorithm.txt
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DeviceExplorerTest.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\GetStarted.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianPerformanceTests.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianTest.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallEdcentra.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallPostTests.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\LiveAlertsList.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\OtherDeviceDataTypes.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\PdmTests.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SetUpTests.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\UserManagement.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\WelcomeScreen.feature.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\AlertInhibitStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\ConfigurationHandlerStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\ConfugireTestsStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\DeviceExplorerTestsStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\DispatchManagertStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\GetStartedStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\HistorianPerformanceTestsStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\HistorianTestsStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\InstallEdcentraStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\InstallPostTestsStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\LiveAlertsListStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\OtherDeviceDataTypesStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\PdmTestsStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\SetupTestsStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\UserManagementStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\WelcomeScreenStepDefinition.cs
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Input Files\License Files\SingleAlgorithm.alf
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\AlertInhibit.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\ConfigurationHandler.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\ConfigureTests.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DeviceExplorerTest.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DispatchManager.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\GetStarted.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianPerformanceTests.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianTest.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallEdcentra.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallPostTests.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\LiveAlertsList.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\OtherDeviceDataTypes.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\PdmTests.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SetUpTests.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\UserManagement.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\WelcomeScreen.feature
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.dll.config
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\netstandard.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.AppContext.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Collections.Concurrent.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Collections.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Collections.NonGeneric.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Collections.Specialized.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Console.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Data.Common.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Contracts.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Debug.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Process.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Tools.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Tracing.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Drawing.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Dynamic.Runtime.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Globalization.Calendars.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Globalization.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Globalization.Extensions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.Compression.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.IsolatedStorage.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.Pipes.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Linq.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Linq.Expressions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Linq.Parallel.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Linq.Queryable.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.Http.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.NameResolution.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.NetworkInformation.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.Ping.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.Requests.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.Security.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.Sockets.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.WebSockets.Client.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Net.WebSockets.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.ObjectModel.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Reflection.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Reflection.Extensions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Reflection.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Resources.Reader.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Resources.ResourceManager.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Resources.Writer.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Extensions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Handles.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.InteropServices.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Numerics.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.Claims.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.Principal.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Security.SecureString.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Text.Encoding.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Text.RegularExpressions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.Overlapped.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.Thread.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.ThreadPool.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.Timer.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.ValueTuple.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Xml.ReaderWriter.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Xml.XDocument.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Xml.XmlDocument.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Xml.XmlSerializer.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Xml.XPath.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Castle.Core.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\DnsClient.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\ExtentReports.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FlaUI.Core.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA2.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA3.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Gherkin.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Interop.UIAutomationClient.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\log4net.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\MongoDB.Bson.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\nunit.framework.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\RazorEngine.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Buffers.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Shim.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Web.Razor.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TechTalk.SpecFlow.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestStack.White.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestStack.White.Reporting.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestStack.White.ScreenObjects.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Utf8Json.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\WebDriver.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\WebDriver.Support.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Castle.Core.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\DnsClient.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FlaUI.Core.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA2.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA3.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\log4net.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\MongoDB.Bson.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\nunit.framework.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\nunit.framework.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\RazorEngine.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\System.Web.Razor.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestStack.White.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestStack.White.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestStack.White.Reporting.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\TestStack.White.ScreenObjects.pdb
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\Utf8Json.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\WebDriver.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\bin\Debug\WebDriver.Support.xml
+C:\RequiredSoftwares\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csprojAssemblyReference.cache
+C:\RequiredSoftwares\EdCentra\trunk\Framework\obj\Debug\Interop.NetFwTypeLib.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.ResolveComReference.cache
+C:\RequiredSoftwares\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.CoreCompileInputs.cache
+C:\RequiredSoftwares\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.CopyComplete
+C:\RequiredSoftwares\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.dll
+C:\RequiredSoftwares\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\NUnit3.TestAdapter.dll
+C:\EdCentra\trunk\Framework\bin\Debug\NUnit3.TestAdapter.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\nunit.engine.dll
+C:\EdCentra\trunk\Framework\bin\Debug\nunit.engine.api.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Pages\SecsGemPage.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\Fingerprint.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SecsGem.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\TipOfTheDayManager.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\FingerprintStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\SecsGemStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\TipOfTheDayManagerStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\Fingerprint.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SecsGem.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\TipOfTheDayManager.feature
+C:\EdCentra\trunk\Framework\bin\Debug\Drivers\chromedriver.exe
+C:\EdCentra\trunk\Framework\bin\Debug\Drivers\geckodriver.exe
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\ADS_SystemTest\DSPU_scenario.xml
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\ADS_SystemTest\model_GradientBased_EXT.XML
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\Algorithm Files\MdxN3Compressed_VG04_Alarm.xml
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\Algorithm Files\MdxN3Compressed_VG04_Warning.xml
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\Availability Data System\DSPU_scenario.xml
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\Maintain Module\DSPU_New Scenario.xml
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\Visualization Files\VisualisationXML_Algorithm.txt
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DeviceExplorerTest.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\GetStarted.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianPerformanceTests.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianTest.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallEdcentra.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallPostTests.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\LiveAlertsList.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\OtherDeviceDataTypes.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\PdmTests.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SetUpTests.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\UserManagement.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\WelcomeScreen.feature.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\AlertInhibitStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\ConfigurationHandlerStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\ConfugireTestsStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\DeviceExplorerTestsStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\DispatchManagertStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\GetStartedStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\HistorianPerformanceTestsStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\HistorianTestsStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\InstallEdcentraStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\InstallPostTestsStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\LiveAlertsListStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\OtherDeviceDataTypesStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\PdmTestsStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\SetupTestsStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\UserManagementStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Step Definition\WelcomeScreenStepDefinition.cs
+C:\EdCentra\trunk\Framework\bin\Debug\Input Files\License Files\SingleAlgorithm.alf
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\AlertInhibit.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\ConfigurationHandler.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\ConfigureTests.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DeviceExplorerTest.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\DispatchManager.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\GetStarted.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianPerformanceTests.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\HistorianTest.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallEdcentra.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\InstallPostTests.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\LiveAlertsList.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\OtherDeviceDataTypes.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\PdmTests.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\SetUpTests.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\UserManagement.feature
+C:\EdCentra\trunk\Framework\bin\Debug\TestCases\Feature\WelcomeScreen.feature
+C:\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.dll.config
+C:\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Edwards.Scada.Test.Framework.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\netstandard.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.AppContext.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Collections.Concurrent.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Collections.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Collections.NonGeneric.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Collections.Specialized.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Console.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Data.Common.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Contracts.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Debug.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Process.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Tools.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Diagnostics.Tracing.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Drawing.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Dynamic.Runtime.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Globalization.Calendars.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Globalization.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Globalization.Extensions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.Compression.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.IsolatedStorage.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.Pipes.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Linq.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Linq.Expressions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Linq.Parallel.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Linq.Queryable.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.Http.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.NameResolution.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.NetworkInformation.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.Ping.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.Requests.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.Security.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.Sockets.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.WebSockets.Client.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Net.WebSockets.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.ObjectModel.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Reflection.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Reflection.Extensions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Reflection.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Resources.Reader.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Resources.ResourceManager.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Resources.Writer.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Extensions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Handles.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.InteropServices.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Numerics.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.Claims.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.Principal.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Security.SecureString.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Text.Encoding.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Text.RegularExpressions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.Overlapped.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.Thread.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.ThreadPool.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.Timer.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.ValueTuple.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Xml.ReaderWriter.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Xml.XDocument.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Xml.XmlDocument.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Xml.XmlSerializer.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Xml.XPath.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Castle.Core.dll
+C:\EdCentra\trunk\Framework\bin\Debug\DnsClient.dll
+C:\EdCentra\trunk\Framework\bin\Debug\ExtentReports.dll
+C:\EdCentra\trunk\Framework\bin\Debug\FlaUI.Core.dll
+C:\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA2.dll
+C:\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA3.dll
+C:\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.dll
+C:\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Gherkin.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Interop.UIAutomationClient.dll
+C:\EdCentra\trunk\Framework\bin\Debug\log4net.dll
+C:\EdCentra\trunk\Framework\bin\Debug\MongoDB.Bson.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.dll
+C:\EdCentra\trunk\Framework\bin\Debug\nunit.framework.dll
+C:\EdCentra\trunk\Framework\bin\Debug\RazorEngine.dll
+C:\EdCentra\trunk\Framework\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Buffers.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Shim.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\EdCentra\trunk\Framework\bin\Debug\System.Web.Razor.dll
+C:\EdCentra\trunk\Framework\bin\Debug\TechTalk.SpecFlow.dll
+C:\EdCentra\trunk\Framework\bin\Debug\TestStack.White.dll
+C:\EdCentra\trunk\Framework\bin\Debug\TestStack.White.Reporting.dll
+C:\EdCentra\trunk\Framework\bin\Debug\TestStack.White.ScreenObjects.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Utf8Json.dll
+C:\EdCentra\trunk\Framework\bin\Debug\WebDriver.dll
+C:\EdCentra\trunk\Framework\bin\Debug\WebDriver.Support.dll
+C:\EdCentra\trunk\Framework\bin\Debug\Castle.Core.xml
+C:\EdCentra\trunk\Framework\bin\Debug\DnsClient.xml
+C:\EdCentra\trunk\Framework\bin\Debug\FlaUI.Core.xml
+C:\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA2.xml
+C:\EdCentra\trunk\Framework\bin\Debug\FlaUI.UIA3.xml
+C:\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.xml
+C:\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\FluentAssertions.Core.xml
+C:\EdCentra\trunk\Framework\bin\Debug\log4net.xml
+C:\EdCentra\trunk\Framework\bin\Debug\MongoDB.Bson.xml
+C:\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\Newtonsoft.Json.xml
+C:\EdCentra\trunk\Framework\bin\Debug\nunit.framework.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\nunit.framework.xml
+C:\EdCentra\trunk\Framework\bin\Debug\RazorEngine.xml
+C:\EdCentra\trunk\Framework\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\EdCentra\trunk\Framework\bin\Debug\System.Web.Razor.xml
+C:\EdCentra\trunk\Framework\bin\Debug\TestStack.White.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\TestStack.White.xml
+C:\EdCentra\trunk\Framework\bin\Debug\TestStack.White.Reporting.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\TestStack.White.ScreenObjects.pdb
+C:\EdCentra\trunk\Framework\bin\Debug\Utf8Json.xml
+C:\EdCentra\trunk\Framework\bin\Debug\WebDriver.xml
+C:\EdCentra\trunk\Framework\bin\Debug\WebDriver.Support.xml
+C:\EdCentra\trunk\Framework\obj\Debug\Interop.NetFwTypeLib.dll
+C:\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.ResolveComReference.cache
+C:\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.CoreCompileInputs.cache
+C:\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csproj.CopyComplete
+C:\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.dll
+C:\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.pdb
+C:\EdCentra\trunk\Framework\obj\Debug\Edwards.Scada.Test.Framework.csprojAssemblyReference.cache

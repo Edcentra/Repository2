@@ -1,0 +1,20 @@
+<processCounter>
+	<header 
+		code="PCP"
+		systemTypeId="25" />
+	<preProcessor 
+		parameterNumber="8" 
+		timeWindowMinutes="2" 
+		onDelta="500" 
+		offDelta="400" />
+	<rule 
+		fudgeFactor="1" 
+		state1CounterThreshold="2" 
+		state2CounterThreshold="3"
+		state1TimeThreshold="0.0581"
+		state2TimeThreshold="0.0582"
+		state3TimeThreshold="0.0583" 
+		state4TimeThreshold="0.075" />
+		<!-- state3TimeThreshold: 3.5 mins is ~0.0583 hours -->
+		<!-- state4TimeThreshold: 4.5 mins is 0.075 hours -->
+</processCounter>

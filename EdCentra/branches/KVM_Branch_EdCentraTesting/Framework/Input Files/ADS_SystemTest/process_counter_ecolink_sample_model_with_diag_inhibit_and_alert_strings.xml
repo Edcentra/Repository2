@@ -1,0 +1,29 @@
+<processCounter>
+	<header 
+		code="PCE"
+		systemTypeId="25" />
+	<PreProcessor>
+		<StartingCodes>1</StartingCodes>
+		<RunningCodes>4</RunningCodes>
+		<StoppingCodes>2,3</StoppingCodes>
+		<StoppedCodes>0</StoppedCodes>
+		<InhibitTime>60</InhibitTime>
+	</PreProcessor>
+	<StateLevelAlerts>
+		<AlertString level="1">IDS_ADS_001_ALERT_ASF</AlertString>
+		<AlertString level="2">IDS_ADS_002_ALERT_ASDF</AlertString>
+		<AlertString level="3">IDS_ADS_005_ALERT_BLAH</AlertString>
+		<AlertString level="4">IDS_ADS_006_ALERT</AlertString>
+	</StateLevelAlerts>    
+	<preProcessor 
+		parameterNumber="68" 
+		timeWindowMinutes="0" 
+		onDelta="1" 
+		offDelta="1" />
+	<rule 
+		fudgeFactor="0.5" 
+		state1CounterThreshold="5"
+		state2CounterThreshold="10"
+		state3CounterThreshold="17"
+		state4CounterThreshold="20" />
+</processCounter>
